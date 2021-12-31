@@ -13,6 +13,8 @@ def plot_survivors_deceased(survival_chances, deceased_chances, k, width, tick_l
     ax.set_ylabel(variable)
     ax.set_yticks(classes,tick_labels)
     ax.legend(labels = ("Deceased","Survived"),bbox_to_anchor=(0.65, 1.25))
+    ax.set_xlabel("Proportion")
+
     
     plt.show()
     
