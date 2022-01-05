@@ -19,3 +19,15 @@ def plot_survivors_deceased(survival_chances, deceased_chances, k, width, tick_l
     plt.show()
     
     return
+
+def plot_age_distribution(ages):
+    fig = plt.figure(figsize=(15,2))
+    ax = fig.add_axes([0,1,1,1])
+
+    plt.vlines(x = ages, ymin = -0.01,ymax=0.01, colors='r')
+    plt.ylim((-0.05,0.05))
+    plt.xlim((0,max(ages)+1))
+    plt.xlabel("Age / Years")
+    plt.xticks(range(0,85,5))
+    
+    return
